@@ -1,25 +1,110 @@
 aid: the-block
 name: The Block
-description: The Block is a company surfaced as a portfolio company of bloomberg-beta and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  The Block is a New York-based digital-assets research, analysis, and news
+  brand founded in 2018, covering cryptocurrency, blockchain, and Web3 markets.
+  Its subscription platform, The Block Pro, packages breaking news, in-depth
+  research, proprietary datasets, and venture-funding intelligence for
+  professional investors, funds, and enterprises. The Block Pro also exposes a
+  set of license-gated APIs - a real-time News API (REST, request-only, JSON),
+  a Deals/Funding API, an Ecosystems/Data API, and a WebSocket news stream -
+  available only to organizations holding a Block Pro subscription. The APIs
+  have no public developer portal or OpenAPI definition; access and technical
+  documentation are arranged through The Block's client-services team.
 url: https://raw.githubusercontent.com/api-evangelist/the-block/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/u/44381976?v=4
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
-- bloomberg-beta
+  - bloomberg-beta
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-25'
 tags:
-- Company
-apis: []
+  - Company
+  - Cryptocurrency
+  - Digital Assets
+  - News
+  - Market Data
+  - Research
+  - Web3
+  - Blockchain
+  - Financial Data
+  - Media
+apis:
+  - aid: the-block-news-api
+    name: The Block News API
+    description: >-
+      Request-only REST API for searching and retrieving current and historical
+      crypto news coverage from The Block, returned as JSON filtered by keyword,
+      topic, article length, and publication date (up to 1,000 articles per
+      query). Licensed to Block Pro subscribers; no public OpenAPI is published.
+    humanURL: https://www.theblock.co/post/232778/the-block-unveils-real-time-news-api-for-seamless-integration-of-its-sector-specific-coverage-of-crypto-and-digital-assets
+    tags:
+      - News
+      - Cryptocurrency
+      - Digital Assets
+  - aid: the-block-deals-api
+    name: The Block Deals / Funding API
+    description: >-
+      Access to The Block's web3 fundraising and deals database - company and
+      investor profiles and deal-level funding data. Licensed to Block Pro
+      subscribers; no public OpenAPI is published.
+    humanURL: https://www.theblock.pro/
+    tags:
+      - Venture Capital
+      - Funding
+      - Web3
+  - aid: the-block-ecosystems-api
+    name: The Block Ecosystems / Data API
+    description: >-
+      Programmatic access to The Block's library of proprietary blockchain and
+      ecosystem datasets and charts. Licensed to Block Pro subscribers; no public
+      OpenAPI is published.
+    humanURL: https://www.theblock.pro/
+    tags:
+      - Market Data
+      - Blockchain
+      - Data
 maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
-- FN: APIs.json
-  email: info@apis.io
+  - FN: Kin Lane
+    email: kin@apievangelist.com
+  - FN: APIs.json
+    email: info@apis.io
 common:
-- type: Website
-  url: https://www.theblockcrypto.com
+  - type: Website
+    url: https://www.theblock.co
+  - type: Portal
+    url: https://www.theblock.pro/
+  - type: Blog
+    url: https://www.theblock.co/latest
+  - type: GitHubOrganization
+    url: https://github.com/TheBlockCrypto
+  - type: SignUp
+    url: https://go.theblock.co/pro-demo-request
+  - type: Login
+    url: https://www.theblock.pro/auth
+  - type: TermsOfService
+    url: https://www.theblock.co/terms-service
+  - type: PrivacyPolicy
+    url: https://www.theblock.co/privacy-policy
+  - type: DomainSecurity
+    url: security/the-block-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
