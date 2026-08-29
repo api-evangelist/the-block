@@ -12,6 +12,17 @@ description: >-
   have no public developer portal or OpenAPI definition; access and technical
   documentation are arranged through The Block's client-services team.
 url: https://raw.githubusercontent.com/api-evangelist/the-block/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
